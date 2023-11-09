@@ -8,21 +8,24 @@ class HBNBCommands(cmd.Cmd):
 
     prompt = "(hbnb) "
 
-    def default(self, line):
-        """invoked when the users Enters nothing"""
-        pass
-
     def do_quit(self, line):
         """exit the shell"""
         return True
     def do_EOF(self, line):
         """handles when an EOF is encountered"""
         return True
-    def do_help(self, line):
-        """invokes the command for help"""
-        print()
+    def emptyline(self):
+        pass
+    def help_quit(self):
+        """prints the help message for quit command"""
+        print("exits the shell")
+
+    def help_EOF(self):
+        """prints the help message for the E-O-F command"""
+        print("End of File")
+
 
 if __name__=="__main__":
-    MyHbnb().cmdloop()
+    HBNBCommands().cmdloop()
 
 
