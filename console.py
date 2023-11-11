@@ -2,6 +2,7 @@
 
 import cmd
 
+
 class HBNBCommands(cmd.Cmd):
     """This defines the class that inherits from the cmd module"""
     intro = "Welcome to AirBnB_clone project"
@@ -11,11 +12,14 @@ class HBNBCommands(cmd.Cmd):
     def do_quit(self, line):
         """exit the shell"""
         return True
+
     def do_EOF(self, line):
         """handles when an EOF is encountered"""
         return True
+
     def emptyline(self):
         pass
+
     def help_quit(self):
         """prints the help message for quit command"""
         print("exits the shell")
@@ -25,7 +29,5 @@ class HBNBCommands(cmd.Cmd):
         print("End of File")
 
 
-if __name__=="__main__":
+if __name__ == "__main__":
     HBNBCommands().cmdloop()
-
-
