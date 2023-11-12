@@ -6,8 +6,6 @@ import cmd
 
 class HBNBCommand(cmd.Cmd):
     """This defines the class that inherits from the cmd module"""
-    intro = "Welcome to AirBnB_clone project"
-
     prompt = "(hbnb) "
 
     def do_quit(self, line):
