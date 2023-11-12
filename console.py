@@ -11,24 +11,16 @@ class HBNBCommand(cmd.Cmd):
     prompt = "(hbnb) "
 
     def do_quit(self, line):
-        """exit the shell"""
+        """Quit command to exit the program"""
         return True
 
     def do_EOF(self, line):
-        """handles when an EOF is encountered"""
+        """EOF command to exit the program"""
         print()
         return True
 
     def emptyline(self):
         pass
-
-    def help_quit(self):
-        """prints the help message for quit command"""
-        print("exits the shell")
-
-    def help_EOF(self):
-        """prints the help message for the E-O-F command"""
-        print("End of File")
 
 
 if __name__ == '__main__':
