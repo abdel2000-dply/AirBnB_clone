@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+"""
 '''python class for our Filestorage class'''
 
 class FileStorage:
@@ -26,3 +26,4 @@ class FileStorage:
         FileStorage.__objects[key] = obj.to_dict()
 
         json.dump(FileStorage.__object, file)
+"""
