@@ -4,7 +4,7 @@
 import cmd
 
 
-class HBNBCommands(cmd.Cmd):
+class HBNBCommand(cmd.Cmd):
     """This defines the class that inherits from the cmd module"""
     intro = "Welcome to AirBnB_clone project"
 
@@ -28,6 +28,7 @@ class HBNBCommands(cmd.Cmd):
     def help_EOF(self):
         """prints the help message for the E-O-F command"""
         print("End of File")
+
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
