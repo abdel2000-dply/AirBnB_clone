@@ -29,6 +29,5 @@ class HBNBCommands(cmd.Cmd):
         """prints the help message for the E-O-F command"""
         print("End of File")
 
-
-if __name__ == "__main__":
-    HBNBCommands().cmdloop()
+if __name__ == '__main__':
+    HBNBCommand().cmdloop()
