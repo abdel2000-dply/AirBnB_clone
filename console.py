@@ -2,6 +2,8 @@
 """ the entry point of the command interpreter """
 
 import cmd
+from models import storage
+from models.base_model import BaseModel
 
 
 class HBNBCommand(cmd.Cmd):
@@ -19,6 +21,13 @@ class HBNBCommand(cmd.Cmd):
 
     def emptyline(self):
         pass
+
+    def do_create(self, arg):
+        """Create a new instance of BaseModel"""
+        if not arg:
+            print("** class name missing **")
+        elif arg not in storage.classes:
+            print("** class doesn't exist **")
 
 
 if __name__ == '__main__':
