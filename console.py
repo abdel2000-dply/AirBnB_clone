@@ -16,6 +16,7 @@ class HBNBCommand(cmd.Cmd):
 
     def do_EOF(self, line):
         """handles when an EOF is encountered"""
+        print()
         return True
 
     def emptyline(self):
