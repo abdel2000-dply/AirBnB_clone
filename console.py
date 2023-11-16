@@ -26,6 +26,7 @@ class HBNBCommand(cmd.Cmd):
             print("** class name missing **")
         elif arg not in storage.classes:
             print("** class doesn't exist **")
+	else
 '''
 
 if __name__ == '__main__':
