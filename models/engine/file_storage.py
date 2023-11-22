@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+"""
 '''python class for our Filestorage class'''
 
 class FileStorage:
@@ -33,5 +33,4 @@ class FileStorage:
             return 
         with open(FileStorage.__file_path) as f:
           obj_dict = json.load(f)
-
-
+          json.dump(FileStorage.__object, file)
